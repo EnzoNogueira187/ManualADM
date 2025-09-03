@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.glassdoor.com/sqll/2811219/igb-ind%C3%BAstria-gr%C3%A1fica-squarelogo-1671531196941.png">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      flex-direction: column;
+      display: flex;
+    }
+    .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+    .text-content {
+        color: black;
+    }
+
+    img {
+      margin-left: 160px;
+      margin-top: 20px;
+    }
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representantes</title>
+</head>
+<body>
+    <nav class="sidebar">
+      <a href="ConvençõesDoSistema.html">Convenções do Sistema</a>
+    <button class="folder-btn" onclick="toggleFolder('folder1', this)" data-dica="Esse são os arquivos básicos, módulos que focam em armazenar.">
+      Arquivos Básicos 🗂️<span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder1" class="submenu">
+      <a href="ClassFiscal.html">Classificação Fiscal</a>
+      <a href="CondiDePagame.html" >Condições de Pagamentos</a>
+      <a href="Departamentos.html">Departamentos</a>
+      <a href="Estados.html">Estados</a>
+      <a href="Etapasdeprodução.html">Etapas de Produção</a>
+      <a href="GPdemateriais.html">Grupo de Materias</a>
+      <a href="Gpdefornecedores.html">Grupo de Fornecedores</a>
+      <a href="IR.html">Imposto de Renda</a>
+      <a href="Indexadores.html">Indexadores</a>
+      <a href="Maquinas.html">Maquinas</a>
+      <a href="MedidasCilindros.html">Medidas de Cilindros</a>
+      <a href="MSG.html">Mensagens Usadas no Faturamento</a>
+      <a href="Portadores.html">Portadores</a>
+      <a href="PosiçãoTrabalho.html">Posições do Trabalho</a>
+      <a href="RamosAtividade.html">Ramos de Atividades</a>
+    </div>
+
+      <button class="folder-btn" onclick="toggleFolder('folder2', this)" data-dica="Esse são os arquivos principais, módulos que focam na manutenção.">
+      Arquivos Principais 🗂️ <span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder2" class="submenu">
+      <a href="ClientesAtivos.html">Clientes</a>
+      <a href="ClientesPotenciais.html">Clientes Potenciais</a>
+      <a href="Comissões.html">Comissões</a>
+      <a href="Cordepapeis.html">Cor de Papeis</a>
+      <a href="DuplicatasReceber.html">Duplicatas a Receber</a>
+      <a href="Faturamento.html">Faturamento</a>
+      <a href="FechamentoDeGuias.html">Fechamento de Guias</a>
+      <a href="Fornecedores.html">Fornecedores</a>
+      <a href="Guias.html">Guias</a>
+      <a href="IntegraçãoAX.html">Integração AX</a>
+      <a href="Materiais.html">Materias</a>
+      <a href="Papeis.html">Papéis</a>
+      <a href="RecebimentoMateriais.html">Recebimento de Materiais</a>
+      <a href="RecebimentoPapeis.html">Recebimento de Papeis</a>
+      <a href="Representantes.html">Representantes</a>
+      <a href="Transportadora.html">Transportadora</a>
+      <a href="IndexadoresEconomicos.html">Valores de Indexadores</a>
+    </div>
+  </nav>
+    <link rel="stylesheet" href="style.css">
+    <main class="content">
+          <div class="container">
+    <div class="text-content">
+        <h1>Representantes</h1>
+    <p>O Módulo de Representantes permite a manuntenção do cadastro de Representantes e de
+        todos os dados relacionados a eles.<br>
+        <img src="imagens/Representantes.JPG" width="609px" height="435px"> <br> <br>
+        Estas informações estão distribuidas em uma tela no formato de páginas,
+        onde cada página traz um tipo especifico de informação.</p>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Clientes Representados</h1>
+    <br>
+    <p>Apresenta em ordem alfabetica uma lista dos Clientes Representados pelo representante.</p>
+    <img src="imagens/RepresentanteCadastroClientes.JPG" width="500px">
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Conta Corrente do Representante</h1> <br>
+    <p>Mostra a posição atual e analítica das contas correntes dos representantes.</p>
+    <img src="imagens/RepresentanteCadastroContaCorrente.JPG" width="500px">
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, click sobre ele com o mouse.</li>
+    <img src="" alt="">
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Contatos do Representante</h1>
+    <br>
+    <p>Mostra os contato e os telefones cadastrados para o Representate selecionado
+        na página de pesquisa e permite a atualização das informações da páginas de contatos e o acesso
+        de forma rápida a página de telefones.
+    </p>
+    <img src="imagens/RepresentanteCadastroContato.JPG" width="500px">
+    <h3>Dicas:</h3>
+    <li>Para saber mais sobre um campo, click sobre ele com o mouse.</li>
+    <img src="" alt="">
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Ficha de Representante</h1>
+    <br>
+    <p>Mostra os dados referentes ao Representantes selecionado na tela de pesquisa e permite sua atualização.</p>
+    <img src="imagens/RepresentanteCadastroFicha.JPG" width="500px">
+    <h3>Dica:</h3>
+    <li>O campo código não é um campo alteravel
+    <li>Para saber mais sobre um campo, click com o mouse sobre ele.</li>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Novo Representante</h1> <br>
+    <p>Tem por finalidade aceitar referente ao representante a ser cadastrado, consisti-la e armazena-lás
+        no arquivo de Representantes.
+        Observe que a tela abaixo permite o cadastro de apenas uma pessoa de contato e uma número de telefone. <br>
+        As demais pessoas de contato e telefone pode ser cadastrado na página Ficha.
+    </p>
+    <h3>Dica:</h3>
+    <ul>
+    <li>Para saber mais sobre um campo, clique sobre ele.</li>
+    </ul>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Pesquisa de Representantes</h1>
+    <br>
+    <p>Pesquisa os representantes cadastrados, apresentando-os em ordem alfabética, podendo o usuários
+        selecionar o tipo de pesquisa por: Razão Social, Nome Fantasia ou Código, sendo que Razão Social
+        e Nome Fantasia, permitem a pesquisa inexata ou seja por palavra ou meia palavra.
+    </p>
+    <img src="imagens/RepresentanteCadastroPesquisa.JPG" width="500px">
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, click sobre ele.</li>
+    <li>Para pesquisar um Representante marque uma das opções de:</li>
+    <img src="imagens/Rz Fan Cod.PNG">
+    <li>Click no botão pesquisa para abrir a caixa de dialogo</li>
+    <img src="imagens/Botão Pesquisa.PNG"> <br> <br> <br>
+    <p>Informe o texto, palavra ou meia palavra ou código a ser pesquisado. Lembre-se que se a opção
+        escolhida foi Razão Social ou Nome Fantasia, informe o texto ou palavra a ser pesquisada ou deixar em branco
+        para ver todos os representantes porem, se a opção escolhida for Código informe, obrigatoriamente,
+        um numero para ser pesquisado e click no botão OK.</p>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Telefones dos Contatos</h1>
+    <br>
+    <p>Permite o cadastro de novos telefones para o contato selecionado na página de contatos e permite
+        também a atualização dos telefones já cadastrados.
+    </p>
+    <img src="imagens/RepresentanteCadastroTelefone.JPG" width="500px">
+    <h3>Dica:</h3>
+    <ul>
+    <li>Para saber mais sobre um campo, click sobre ele com o mouse.</li>
+    </ul>
+     <a href="!PagInicial.html" class="btn-menu-principal">Menu Principal</a>
+</div>
+</div>
+    </div>
+    <script>
+        function toggleFolder(id, btn) {
+      const folder = document.getElementById(id);
+      const arrow = btn.querySelector('.arrow');
+      if (folder.style.display === "block") {
+        folder.style.display = "none";
+        arrow.classList.remove('rotate');
+      } else {
+        folder.style.display = "block";
+        arrow.classList.add('rotate');
+      }
+    }
+
+    function mostrarAba(qual) {
+      const tabPesquisa = document.querySelector('.tab:nth-child(1)');
+      const tabFicha = document.querySelector('.tab:nth-child(2)');
+      const abaPesquisa = document.getElementById('aba-pesquisa');
+      const abaFicha = document.getElementById('aba-ficha');
+
+      if (qual === 'pesquisa') {
+        abaPesquisa.classList.remove('hidden');
+        abaFicha.classList.add('hidden');
+        tabPesquisa.classList.add('ativa');
+        tabFicha.classList.remove('ativa');
+      } else {
+        abaFicha.classList.remove('hidden');
+        abaPesquisa.classList.add('hidden');
+        tabFicha.classList.add('ativa');
+        tabPesquisa.classList.remove('ativa');
+      }
+    }
+
+</script>
+</body>
+</html>

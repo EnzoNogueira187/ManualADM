@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="https://media.glassdoor.com/sqll/2811219/igb-ind%C3%BAstria-gr%C3%A1fica-squarelogo-1671531196941.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleinicial.css">
+    <title>Manual - IGB</title>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader-text">Carregando...</div>
+    <div class="loader-bar">
+      <div class="loader-progress" id="loaderProgress"></div>
+    </div>
+  </div>
+  <div class="conteudo">
+    <div class="sidebar">
+    <a href="ConvençõesDoSistema.html">Convenções do Sistema</a>
+    <button class="folder-btn" onclick="toggleFolder('folder1', this)">
+    Arquivos Básicos 🗂️<span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder1" class="submenu">
+    <a href="ClassFiscal.html">Classificação Fiscal</a>
+    <a href="CondiDePagame.html" >Condições de Pagamentos</a>
+      <a href="Cordepapeis.html">Cor de Papéis</a>
+      <a href="Departamentos.html">Departamentos</a>
+      <a href="Estados.html">Estados</a>
+      <a href="Etapasdeprodução.html">Etapas de Produção</a>
+      <a href="GPdemateriais.html">Grupo de Materias</a>
+      <a href="Gpdefornecedores.html">Grupo de Fornecedores</a>
+      <a href="IR.html">Imposto de Renda</a>
+      <a href="Indexadores.html">Indexadores</a>
+      <a href="Maquinas.html">Máquinas</a>
+      <a href="MedidasCilindros.html">Medidas de Cilindros</a>
+      <a href="MSG.html">Mensagens Usadas no Faturamento</a>
+      <a href="Papeis.html">Papéis</a>
+      <a href="Portadores.html">Portadores</a>
+      <a href="PosiçãoTrabalho.html">Posições do Trabalho</a>
+      <a href="RamosAtividade.html">Ramos de Atividades</a>
+    </div>
+      <button class="folder-btn" onclick="toggleFolder('folder2', this)" data-dica="Esse são os arquivos principais, módulos que focam na manutenção.">
+      Arquivos Principais 🗂️ <span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder2" class="submenu">
+      <a href="ClientesAtivos.html">Clientes</a>
+      <a href="ClientesPotenciais.html">Clientes Potenciais</a>
+      <a href="Comissões.html">Comissões</a>
+      <a href="DuplicatasReceber.html">Duplicatas a Receber</a>
+      <a href="Faturamento.html">Faturamento</a>
+      <a href="FechamentoDeGuias.html">Fechamento de Guias</a>
+      <a href="Fornecedores.html">Fornecedores</a>
+      <a href="Guias.html">Guias</a>
+      <a href="IntegraçãoAX.html">Integração AX</a>
+      <a href="Materiais.html">Materias</a>
+      <a href="RecebimentoMateriais.html">Recebimento de Materiais</a>
+      <a href="RecebimentoPapeis.html">Recebimento de Papeis</a>
+      <a href="Representantes.html">Representantes</a>
+      <a href="Transportadora.html">Transportadora</a>
+      <a href="IndexadoresEconomicos.html">Valores de Indexadores</a>
+    </div>
+  </div>
+    <div class="content">
+      <button class="chat-button" onclick="toggleChat()">💬</button>
+<div class="chat-container" id="chatContainer"  role="region" aria-label="Chat de ajuda">
+    <div class="chat-header">Olá, o que está procurando?</div>
+    <div class="menu">
+        <button onclick="goToHelp('transportadora')">Transportadora</button>
+        <button onclick="goToHelp('departamentos')">Departamentos</button>
+        <button onclick="goToHelp('materiais')">Materiais</button>
+        <button onclick="goToHelp('estados')">Estados</button>
+        <button onclick="goToHelp('portadores')">Portadores</button>
+        <button onclick="goToHelp('clientes ativos')">Clientes Ativos</button>
+    </div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Digite sua dúvida...">
+        <button type="button" onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+    <div class="centralizar">
+    <img src="https://industriagraficabrasileira.com.br/wp-content/uploads/2023/01/logo-igb.png" alt="logo-igb" width="600px" height="200px">
+    <h1>Bem-vindo ao Manual do Sistema</h1>
+    <p>Este manual foi feito para o suporte de manuseio do sistema, <br> ajudando os usuários a tirar suas dúvidas sobre.</p> </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+<footer>
+  <div class="footer-info">
+      &copy; 2025 Enzo Nogueira - Indústria Gráfica Brasileira. Todos os Direitos Reservados
+    </div>
+  </footer>
+</body>
+</html>

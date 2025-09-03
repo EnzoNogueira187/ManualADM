@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.glassdoor.com/sqll/2811219/igb-ind%C3%BAstria-gr%C3%A1fica-squarelogo-1671531196941.png">
+    <style>
+    body {
+      margin: 0px;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+
+    .text-content {
+        color: black;
+    }
+  img {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portadores</title>
+</head>
+<body>
+    <nav class="sidebar">
+      <a href="ConvençõesDoSistema.html">Convenções do Sistema</a>
+    <button class="folder-btn" onclick="toggleFolder('folder1', this)" data-dica="Esse são os arquivos básicos, módulos que focam em armazenar.">
+      Arquivos Básicos 🗂️<span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder1" class="submenu">
+      <a href="ClassFiscal.html">Classificação Fiscal</a>
+      <a href="CondiDePagame.html" >Condições de Pagamentos</a>
+      <a href="Departamentos.html">Departamentos</a>
+      <a href="Estados.html">Estados</a>
+      <a href="Etapasdeprodução.html">Etapas de Produção</a>
+      <a href="GPdemateriais.html">Grupo de Materias</a>
+      <a href="Gpdefornecedores.html">Grupo de Fornecedores</a>
+      <a href="IR.html">Imposto de Renda</a>
+      <a href="Indexadores.html">Indexadores</a>
+      <a href="Maquinas.html">Maquinas</a>
+      <a href="MedidasCilindros.html">Medidas de Cilindros</a>
+      <a href="MSG.html">Mensagens Usadas no Faturamento</a>
+      <a href="Portadores.html">Portadores</a>
+      <a href="PosiçãoTrabalho.html">Posições do Trabalho</a>
+      <a href="RamosAtividade.html">Ramos de Atividades</a>
+    </div>
+
+      <button class="folder-btn" onclick="toggleFolder('folder2', this)" data-dica="Esse são os arquivos principais, módulos que focam na manutenção.">
+      Arquivos Principais 🗂️ <span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder2" class="submenu">
+      <a href="ClientesAtivos.html">Clientes</a>
+      <a href="ClientesPotenciais.html">Clientes Potenciais</a>
+      <a href="Comissões.html">Comissões</a>
+      <a href="Cordepapeis.html">Cor de Papeis</a>
+      <a href="DuplicatasReceber.html">Duplicatas a Receber</a>
+      <a href="Faturamento.html">Faturamento</a>
+      <a href="FechamentoDeGuias.html">Fechamento de Guias</a>
+      <a href="Fornecedores.html">Fornecedores</a>
+      <a href="Guias.html">Guias</a>
+      <a href="IntegraçãoAX.html">Integração AX</a>
+      <a href="Materiais.html">Materias</a>
+      <a href="Papeis.html">Papéis</a>
+      <a href="RecebimentoMateriais.html">Recebimento de Materiais</a>
+      <a href="RecebimentoPapeis.html">Recebimento de Papeis</a>
+      <a href="Representantes.html">Representantes</a>
+      <a href="Transportadora.html">Transportadora</a>
+      <a href="IndexadoresEconomicos.html">Valores de Indexadores</a>
+    </div>
+  </nav>
+    <link rel="stylesheet" href="style.css">
+    <main class="content">
+          <div class="container">
+    <div class="text-content">
+        <h1>Portadores</h1>
+    <p>O Cadastro de Portadores tem por finalidade armazenar os possíveis Portadores de títulos para que,
+        posteriormente na manuntenção dos Títulos gerados por emissão de Notas Fiscais o usuário possa fazer a agregação
+        dos valores faturados.
+    </p> <br>
+    <p><b>Exemplos:</b>
+      <li>Banco do Brasil S.A</li>
+      <li>Carteiras</li>
+      <li>Terceiros</li></p> <br>
+    <p>Estas informações estão distribuidas em uma tela no formato de páginas, 
+        onde cada página traz um tipo especifico de informação.</p>
+        <h3>Dica:</h3>
+        <li>Para saber mais sobre um campo, click com o mouse sobre ele.</li>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Pesquisa Portadores</h1>
+    <p>Esta página tem por finalidade pesquisar os Portadores cadastradas, apresentando-as em ordem alfabetica.</p>
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, click com o mouse sobre ele.
+    <li>Para pesquisar um Portador informe o texto a ser pesquisado na caixa de diálogo ou deixe-a em branco para ver todos os cadastrados.</li>
+    <li>Click no botão Executa Pesquisa <img src="imagens/Botão Pesquisa.PNG" alt="botão de pesquisa"></li>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Ficha do Portador</h1> <br>
+    <p>Apresenta os dados referentes ao Portador selecionado na página de pesquisa e permite ao usuário:</p>
+    <ul>
+    <li>Cadastrar um novo Portador;</li>
+    <li>Alterar um portador cadastrado;</li>
+    <li>Excluir o cadastro de um Portador.</li>
+    </ul>
+    <h3>Dica:</h3>
+    <ul>
+    <li>Para saber mais sobre um campo, click com o mouse sobre ele.</li>
+    </ul>
+     <a href="!PagInicial.html" class="btn-menu-principal">Menu Principal</a>
+</div>
+</div>
+    </div>
+    <script>
+        function toggleFolder(id, btn) {
+      const folder = document.getElementById(id);
+      const arrow = btn.querySelector('.arrow');
+      if (folder.style.display === "block") {
+        folder.style.display = "none";
+        arrow.classList.remove('rotate');
+      } else {
+        folder.style.display = "block";
+        arrow.classList.add('rotate');
+      }
+    }
+
+    function mostrarAba(qual) {
+      const tabPesquisa = document.querySelector('.tab:nth-child(1)');
+      const tabFicha = document.querySelector('.tab:nth-child(2)');
+      const abaPesquisa = document.getElementById('aba-pesquisa');
+      const abaFicha = document.getElementById('aba-ficha');
+
+      if (qual === 'pesquisa') {
+        abaPesquisa.classList.remove('hidden');
+        abaFicha.classList.add('hidden');
+        tabPesquisa.classList.add('ativa');
+        tabFicha.classList.remove('ativa');
+      } else {
+        abaFicha.classList.remove('hidden');
+        abaPesquisa.classList.add('hidden');
+        tabFicha.classList.add('ativa');
+        tabPesquisa.classList.remove('ativa');
+      }
+    }
+
+</script>
+</body>
+</html>

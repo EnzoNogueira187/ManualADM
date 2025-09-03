@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.glassdoor.com/sqll/2811219/igb-ind%C3%BAstria-gr%C3%A1fica-squarelogo-1671531196941.png">
+    <style>
+    body {
+      margin: 0px;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+
+    .text-content {
+        color: black;
+    }
+
+    img {
+      margin-left: 150px;
+      margin-top: 20px;
+    }
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias</title>
+</head>
+<body>
+    <nav class="sidebar">
+      <a href="ConvençõesDoSistema.html">Convenções do Sistema</a>
+   <button class="folder-btn" onclick="toggleFolder('folder1', this)" data-dica="Esse são os arquivos básicos, módulos que focam em armazenar.">
+      Arquivos Básicos 🗂️<span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder1" class="submenu">
+      <a href="ClassFiscal.html">Classificação Fiscal</a>
+      <a href="CondiDePagame.html" >Condições de Pagamentos</a>
+      <a href="Departamentos.html">Departamentos</a>
+      <a href="Estados.html">Estados</a>
+      <a href="Etapasdeprodução.html">Etapas de Produção</a>
+      <a href="GPdemateriais.html">Grupo de Materias</a>
+      <a href="Gpdefornecedores.html">Grupo de Fornecedores</a>
+      <a href="IR.html">Imposto de Renda</a>
+      <a href="Indexadores.html">Indexadores</a>
+      <a href="Maquinas.html">Maquinas</a>
+      <a href="MedidasCilindros.html">Medidas de Cilindros</a>
+      <a href="MSG.html">Mensagens Usadas no Faturamento</a>
+      <a href="Portadores.html">Portadores</a>
+      <a href="PosiçãoTrabalho.html">Posições do Trabalho</a>
+      <a href="RamosAtividade.html">Ramos de Atividades</a>
+    </div>
+
+      <button class="folder-btn" onclick="toggleFolder('folder2', this)" data-dica="Esse são os arquivos principais, módulos que focam na manutenção.">
+      Arquivos Principais 🗂️ <span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder2" class="submenu">
+      <a href="ClientesAtivos.html">Clientes</a>
+      <a href="ClientesPotenciais.html">Clientes Potenciais</a>
+      <a href="Comissões.html">Comissões</a>
+      <a href="Cordepapeis.html">Cor de Papeis</a>
+      <a href="DuplicatasReceber.html">Duplicatas a Receber</a>
+      <a href="Faturamento.html">Faturamento</a>
+      <a href="FechamentoDeGuias.html">Fechamento de Guias</a>
+      <a href="Fornecedores.html">Fornecedores</a>
+      <a href="Guias.html">Guias</a>
+      <a href="IntegraçãoAX.html">Integração AX</a>
+      <a href="Materiais.html">Materias</a>
+      <a href="Papeis.html">Papéis</a>
+      <a href="RecebimentoMateriais.html">Recebimento de Materiais</a>
+      <a href="RecebimentoPapeis.html">Recebimento de Papeis</a>
+      <a href="Representantes.html">Representantes</a>
+      <a href="Transportadora.html">Transportadora</a>
+      <a href="IndexadoresEconomicos.html">Valores de Indexadores</a>
+    </div>
+  </nav>
+    <link rel="stylesheet" href="style.css">
+    <main class="content">
+          <div class="container">
+    <div class="text-content">
+        <h1>Guias</h1> <br>
+      <p>O Cadastro de Grupo de Materiais tem por finalidade armazenar os Grupos de Materiais diversos pré-definidos
+        para posterior agregação dos Materias. <br>
+        Estas informações estão distribuidas em uma tela no formato de páginas, onde cada página traz um tipo especifico
+        de informação.
+    </p>
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, clique com o mouse sobre ele.</li>
+    <br>
+<hr class="divisor">
+      <br>
+    <h1>Novo Conceito de Guia</h1>
+     <p>Como já sabemos para todo pedido é aberto uma nova Guia na qual devemos especificar todas as 
+        informações necessárias para os diversos departamentos da empresa. <br>
+        A Primeira Parte da Guia (Guia Principal) contem informações sobre o representante, cliente, pedido 
+        e parcelas do pedido. <br>
+        Enquanto que a segunda parte, contem as informações sobre as <a href="OS.html">Ordens de Serviços</a> (OS).
+    </p>
+    <br>
+<hr class="divisor">
+      <br>
+    <h1>Consultando uma Guia</h1>
+    <p>Estando com a Guia gerada (esteja ela aberta por inteira ou parcialmente). <br>
+    Necessitamos consultar ou alterar informações sobre a mesma. <br>
+    <img src="imagens/Consulta_Guias.JPG" alt="" width="700px" height="400px"><br> <br>
+    Para isto, não precisamos seguir uma sequencia lógica das páginas, como na abertura da Guia, podemos
+    selecionar a página desejada e alterar as informações da mesma, sempre lembrando que toda alteração
+    precisa ser confirmada (gravada). <br>
+    <p><b>Consultando as páginas de:</b></p> <br>
+    <li>Pesquisa</li>
+<li>Clientes/Representantes</li>
+<li>Pedidos/CFO/Parcelas</li>
+<li>OS / A</li>
+<li>OS / B</li>
+<li>Máquinas</li>
+<li>Tintas</li>
+<li>Papéis</li>
+<li>Carbono</li>
+<li>Extra</li>
+<li>Etapas</li>
+      <br>
+<hr class="divisor">
+      <br>
+<h1>Abrindo uma Nova Guia</h1>
+    <h2>No menu principal</h2>
+    <div class="centralizar">
+    <li>No Menu Movimentos Selecione a opção Guia Abertura</li>
+    <li>Selecionando a opção de Guias</li>
+    <li>Dê um clique na opção Guias Aberturas</li>
+    </div>
+    <img src="imagens/Guias_Aberturas.JPG" alt="" width="615px" height="339px"> <br> <br>
+    <h2>Na página de Pesquisa</h2>
+    <p>1º - Clique no botão abrir Nova guia</p>
+    <h2>Na página de Clientes </h2>
+    <p> 2º - Preencha os campos do Cliente e grave as informações <br>
+        3º - Preencha os campos do representantes e grave as informações.
+    </p>
+    <h2>Na página de Pedidos</h2>
+    <p>4º - Preencha os campos do Pedidos/CFO e grave as informações <br>
+        5º - Preencha os campos Parcelas e grave as informações
+    </p>
+    <h2>Na página de OS / A</h2>
+    <p>6º - Preencha os campos  da OS / A e grave as informações</p>
+    <h2>Na página da OS / B</h2>
+    <p>7º - Preencha os campos da OS / B e grave as informações</p>
+    <h2>Na página de Tintas</h2>
+    <p>8º - Preencha os campos das tintas e grave as informações</p>
+    <h2>Na página de Máquinas</h2>
+    <p>9º - Preencha os campos das Máquinas e grave as informações</p>
+    <h2>Na página de Papéis</h2>
+    <p>10º - Preenha os campos dos Papéis e grave as informações</p>
+    <h2>Na página de Carbono (se houver)</h2>
+    <p>11º - Preecha os campos dos Carbonos e grave as informações</p>
+    <h2>Na página Extra</h2>
+    <p>12º - Preencha os campos de Extras e grave as informações</p>
+    <h2>Na página de Etapas</h2>
+    <p>13º - Preencha os campos das Etapas e grave as informações</p><br>
+<hr class="divisor">
+      <br>
+    <h1>Impressão da Guia</h1>
+    <p>A GUIA  pode ser impressa a qualquer momento e qualquer parte que desejar, não sendo obrigatório 
+        a imprimí-la por inteira. Ao ativar a tela para impressão de Guia é sugerido a última Guia que foi aberta. <br>
+        Para imprimir outra, apague o número sugerido e digite o outro, caso não conheça o número, deixe esse campo em branco, que ao sair do mesmo será aberto
+        uma caixa de listagem com as Guias que já foram abertas.
+    </p>
+    <img src="imagens/Impressão.JPG" width="400px">
+     <a href="!PagInicial.html" class="btn-menu-principal">Menu Principal</a>
+  </div>
+</div>
+    </div>
+    <script>
+        function toggleFolder(id, btn) {
+      const folder = document.getElementById(id);
+      const arrow = btn.querySelector('.arrow');
+      if (folder.style.display === "block") {
+        folder.style.display = "none";
+        arrow.classList.remove('rotate');
+      } else {
+        folder.style.display = "block";
+        arrow.classList.add('rotate');
+      }
+    }
+
+    function mostrarAba(qual) {
+      const tabPesquisa = document.querySelector('.tab:nth-child(1)');
+      const tabFicha = document.querySelector('.tab:nth-child(2)');
+      const abaPesquisa = document.getElementById('aba-pesquisa');
+      const abaFicha = document.getElementById('aba-ficha');
+
+      if (qual === 'pesquisa') {
+        abaPesquisa.classList.remove('hidden');
+        abaFicha.classList.add('hidden');
+        tabPesquisa.classList.add('ativa');
+        tabFicha.classList.remove('ativa');
+      } else {
+        abaFicha.classList.remove('hidden');
+        abaPesquisa.classList.add('hidden');
+        tabFicha.classList.add('ativa');
+        tabPesquisa.classList.remove('ativa');
+      }
+    }
+
+</script>
+</body>
+</html>

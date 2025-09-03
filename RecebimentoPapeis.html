@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.glassdoor.com/sqll/2811219/igb-ind%C3%BAstria-gr%C3%A1fica-squarelogo-1671531196941.png">
+    <style>
+    body {
+      margin: 0px;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .botao {
+        margin-left: 500px;
+        margin-top: 50px;
+        align-items: center;
+        background-color: #7c7c7c;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 70px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+}
+
+    .botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(45deg, #000000, #f0f1f1);
+}
+
+  .botao:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+    .sidebar {
+      height: 100vh;
+      width: 245px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #494949;
+      padding-top: 20px;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+
+    .sidebar a, .folder-btn {
+      display: block;
+      color: rgb(255, 255, 255);
+      padding: 12px 20px;
+      text-decoration: none;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover, .folder-btn:hover {
+      background-color: #636363;
+    }
+
+    .submenu {
+      display: none;
+      background-color: #5a5959;
+      padding-left: 0px;
+      border-radius: 10px;
+    }
+
+    .submenu a {
+      padding: 10px 10px;
+      font-size: 0.95em;
+      color: #ffffff;
+      border-radius: 10px;
+    }
+
+    .submenu a:hover {
+      background-color: #777777;
+    }
+
+    .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: #ffffff;
+      text-align: left;
+      padding: 20px 10px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #000000;
+    }
+
+    footer-info {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    footer {
+    position: fixed;
+    top: 0;
+    width: 27%;
+    height: 15%;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+    .text-content {
+        color: black;
+    }
+
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebimento de Papéis</title>
+</head>
+<body>
+    <nav class="sidebar">
+      <a href="ConvençõesDoSistema.html">Convenções do Sistema</a>
+    <button class="folder-btn" onclick="toggleFolder('folder1', this)" data-dica="Esse são os arquivos básicos, módulos que focam em armazenar.">
+      Arquivos Básicos 🗂️<span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder1" class="submenu">
+      <a href="ClassFiscal.html">Classificação Fiscal</a>
+      <a href="CondiDePagame.html" >Condições de Pagamentos</a>
+      <a href="Departamentos.html">Departamentos</a>
+      <a href="Estados.html">Estados</a>
+      <a href="Etapasdeprodução.html">Etapas de Produção</a>
+      <a href="GPdemateriais.html">Grupo de Materias</a>
+      <a href="Gpdefornecedores.html">Grupo de Fornecedores</a>
+      <a href="IR.html">Imposto de Renda</a>
+      <a href="Indexadores.html">Indexadores</a>
+      <a href="Maquinas.html">Maquinas</a>
+      <a href="MedidasCilindros.html">Medidas de Cilindros</a>
+      <a href="MSG.html">Mensagens Usadas no Faturamento</a>
+      <a href="Portadores.html">Portadores</a>
+      <a href="PosiçãoTrabalho.html">Posições do Trabalho</a>
+      <a href="RamosAtividade.html">Ramos de Atividades</a>
+    </div>
+
+      <button class="folder-btn" onclick="toggleFolder('folder2', this)" data-dica="Esse são os arquivos principais, módulos que focam na manutenção.">
+      Arquivos Principais 🗂️ <span class="arrow">&#9654;</span>
+    </button>
+    <div id="folder2" class="submenu">
+      <a href="ClientesAtivos.html">Clientes</a>
+      <a href="ClientesPotenciais.html">Clientes Potenciais</a>
+      <a href="Comissões.html">Comissões</a>
+      <a href="Cordepapeis.html">Cor de Papeis</a>
+      <a href="DuplicatasReceber.html">Duplicatas a Receber</a>
+      <a href="Faturamento.html">Faturamento</a>
+      <a href="FechamentoDeGuias.html">Fechamento de Guias</a>
+      <a href="Fornecedores.html">Fornecedores</a>
+      <a href="Guias.html">Guias</a>
+      <a href="IntegraçãoAX.html">Integração AX</a>
+      <a href="Materiais.html">Materias</a>
+      <a href="Papeis.html">Papéis</a>
+      <a href="RecebimentoMateriais.html">Recebimento de Materiais</a>
+      <a href="RecebimentoPapeis.html">Recebimento de Papeis</a>
+      <a href="Representantes.html">Representantes</a>
+      <a href="Transportadora.html">Transportadora</a>
+      <a href="IndexadoresEconomicos.html">Valores de Indexadores</a>
+    </div>
+  </nav>
+    <link rel="stylesheet" href="style.css">
+    <main class="content">
+          <div class="container">
+    <div class="text-content">
+        <h1>Recebimento de Papéis</h1> <br>
+    <p>Esta página tem por finalidade, armazenar as entradas de papeis. <br>
+    Estas informações estão distribuidas em uma tela no formato de páginas, onde cada página traz um tipo
+    especifico de informação.
+    </p>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Pesquisa Entrada de Papéis</h1> <br>
+    <p>Esta página tem por finalidade pesquisar as entradas de um tipo específico de papel.
+    </p>
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, click com o mouse sobre ele.</li>
+    <li>Para pesquisar as entradas de um determinado tipo de papel, selecione um tipo de papel na caixa de seleção.</li>
+    <li>Clique no botão executa pesquisa para obter a pesquisa</li>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Movimento de Papeis</h1>
+    <p>Apresenta os dados referentes ao Movimento selecionado na página de pesquisa e possibilita o usuário:</p>
+    <li>Receber uma nova entrada de papel;</li>
+    <li>Alterar uma entrada;</li>
+    <li>Excluir o registro de uma entrada.</li>
+    <h3>Dica:</h3>
+    <li>Para saber mais sobre um campo, click com o mouse sobre ele.</li>
+    <br>
+<hr class="divisor">
+      <br>
+      <h1>Papeis à Receber</h1>
+    <p>Esta página apresenta uma lista dos papéis que estão aguardando recebimento.</p>
+     <a href="!PagInicial.html" class="btn-menu-principal">Menu Principal</a>
+</div>
+</div>
+    </div>
+    <script>
+        function toggleFolder(id, btn) {
+      const folder = document.getElementById(id);
+      const arrow = btn.querySelector('.arrow');
+      if (folder.style.display === "block") {
+        folder.style.display = "none";
+        arrow.classList.remove('rotate');
+      } else {
+        folder.style.display = "block";
+        arrow.classList.add('rotate');
+      }
+    }
+
+    function mostrarAba(qual) {
+      const tabPesquisa = document.querySelector('.tab:nth-child(1)');
+      const tabFicha = document.querySelector('.tab:nth-child(2)');
+      const abaPesquisa = document.getElementById('aba-pesquisa');
+      const abaFicha = document.getElementById('aba-ficha');
+
+      if (qual === 'pesquisa') {
+        abaPesquisa.classList.remove('hidden');
+        abaFicha.classList.add('hidden');
+        tabPesquisa.classList.add('ativa');
+        tabFicha.classList.remove('ativa');
+      } else {
+        abaFicha.classList.remove('hidden');
+        abaPesquisa.classList.add('hidden');
+        tabFicha.classList.add('ativa');
+        tabPesquisa.classList.remove('ativa');
+      }
+    }
+
+</script>
+</body>
+</html>
